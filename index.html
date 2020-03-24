@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="preload"
+      as="font"
+      crossorigin
+      type="font/woff2"
+      href="https://assets.player.radio/latest/assets/sintony-v7-latin-700.woff2"
+    />
+    <link
+      rel="preload"
+      as="fetch"
+      crossorigin="use-credentials"
+      href="locales/en-CA/translation.json"
+    />
+    <link rel="preconnect" href="https://mapi-prod.radioplayer.co.uk/" />
+    <link
+      rel="preconnect"
+      href="https://search.radioplayer.ca/"
+      crossorigin="use-credentials"
+    />
+    <link
+      rel="preconnect"
+      href="https://cookie.radioplayer.ca/"
+      crossorigin="use-credentials"
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <script
+      type="module"
+      src="https://assets.player.radio/latest/radioplayer.js"
+    ></script>
+    <script
+      nomodule
+      defer
+      src="https://assets.player.radio/latest/radioplayer.legacy.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Radioplayer web player" />
+    <title>Phantom 103.3 FM Bathurst - Radioplayer</title>
+    <style>
+      [data-widget-radioplayer] {
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        position: absolute;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://assets.player.radio/latest/radioplayer.css"
+    />
+  </head>
+
+  <body>
+    <div data-widget-radioplayer>
+      <script type="application/json">
+        {
+            "mapi": "https://mapi-prod.radioplayer.co.uk/api/ca/",
+            "cm": "https://cookie.radioplayer.ca/cm/",
+            "al": "https://static.radioplayer.ca/v3/analytics.html",
+            "np": "https://np.radioplayer.ca/qp/",
+            "qp": "https://search.radioplayer.ca/qp/",
+            "rpLogo": "assets/radioplayer.svg",
+            "id": "530",
+            "fallback": [
+                {
+                    "url": "http://37.187.90.196:8912/live.m3u",
+                    "format": "m3u"
+                }
+            ],
+            "iframeSrc": "",
+            "stationLogo": "http://assets.radioplayer.ca/stationimages/530_programme_image.png",
+            "stationUrl": "http://www.phantom.fm",
+            "theme": "DARK",
+            "themeColour": "#ff0059",
+            "widgets": ["NP", "SC"],
+            "widgetOverrides": ""
+        }
+      </script>
+    </div>
+  </body>
+</html>
